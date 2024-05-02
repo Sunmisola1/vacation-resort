@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation-Resort</title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://kit.fontawesome.com/9e0694c1ee.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Ojuju:wght@200..800&family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Ojuju:wght@200..800&family=Open+Sans:ital,wght@1,300&family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Merienda:wght@300..900&family=Ojuju:wght@200..800&family=Open+Sans:ital,wght@1,300&family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Kaushan+Script&family=Merienda:wght@300..900&family=Ojuju:wght@200..800&family=Open+Sans:ital,wght@1,300&family=Satisfy&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container">
+            <header>
+             <nav class="nav-bar">
+                    <div class="logo-wrap">
+                        <a href="#">Tour Reservation</a>
+                    </div>
+
+                        <ul class="nav-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Tours</a></li>
+                            <li><a href="#">Booking</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="burger" onclick="toggleMenu()">
+                        <i class="fa-sharp fa-solid fa-bars"></i>
+                    </div>               
+                   
+        </header>
+       
+        <div class="hero-section">
+            <video autoplay loop muted playsinline>
+              <source src="/assets/video/hero3.mp4" type="video/mp4">
+              <!-- Include additional source elements for other video formats if needed -->
+              Your browser does not support the video tag.
+            </video>
+            <!-- Other content for the hero section goes here -->
+            <div class="hero-gradient"></div>
+            <div class="hero-content">
+                <h1>Embark on Your Next Adventure</h1>
+                <p>Discover breathtaking destinations and create lifelong memories with our expertly crafted tours.</p>
+               <!-- the form sectio -->
+                <div class="booking-section">
+                    <div class="booking-input">
+                      <!-- <label for="location">Location</label> -->
+                      <div class="input-with-icon">
+                        <input type="text" id="location" name="location" placeholder="Enter location">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                    </div>
+                    <div class="booking-input">
+                      <!-- <label for="date">Date</label> -->
+                      <div class="input-with-icon">
+                        <input type="date" id="date" name="date" placeholder="Select date">
+                        <i class="fas fa-calendar-alt"></i>
+                      </div>
+                    </div>
+                    <div class="booking-input">
+                      <!-- <label for="people">People</label> -->
+                      <div class="input-with-icon">
+                        <input type="number" id="people" name="people" placeholder="Number of people">
+                        <i class="fas fa-users"></i>
+                      </div>
+                    </div>
+                    <button class="btn">Search Tours</button>
+
+                  </div>
+                  
+              </div>
+              
+          </div>
+          <!-- other section -->
+          <section class="features-section">
+            <div class="container">
+              <h2>Why Choose Us</h2>
+              <div class="feature-wrap">
+              <div class="feature">
+                <i class="fas fa-star"></i>
+                <h3>Experienced</h3>
+                <p>Our team consists of experienced guides who ensure you have the best travel experience.</p>
+              </div>
+              <div class="feature">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Affordable Price</h3>
+                <p>We offer competitive prices without compromising on the quality of our services.</p>
+              </div>
+              <div class="feature">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Our dedicated support team is available round the clock to assist you with any inquiries or concerns.</p>
+              </div>
+              </div>
+            </div>
+          </section>
+          <!-- popular place -->
+          <section class="tour-cards">
+            <h2>Popular Places</h2>
+            <div class="container">
+             
+              <div class="card">
+                <div class="card-img">
+                <img src="/assets/img/11.jpg" alt="Tour 1" class="tour-img">
+            </div>
+                <div class="card-content">
+                    <div class="card-head">
+                  <h3> Destination 1</h3>
+                 <i class="fas fa-map-marker-alt"></i>
+                </div>
+                  <p>Description about Destination 1</p>
+                  <!--  -->
+                  <div class="bt-card">
+                  <button class="tour-btn">Book</button>
+                  <div class="price">$100</div>
+                </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <img src="tour2.jpg" alt="Tour 2">
+                <div class="card-content">
+                  <h3><i class="fas fa-map-marker-alt"></i> Destination 2</h3>
+                  <p>Description about Destination 2</p>
+                  <div class="price">$150</div>
+                  <button class="btn">Book</button>
+                </div>
+              </div>
+              <!-- Add more cards as needed -->
+            </div>
+          </section>
+          
+    </div>
+</body>
+</html>
